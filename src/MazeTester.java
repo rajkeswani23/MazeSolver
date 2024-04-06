@@ -1,3 +1,6 @@
+// Raj Keswani
+// April 5, 2024
+
 /**
  * A class to test our MazeSolver
  * @author: Nandhini Namasivayam

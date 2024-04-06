@@ -1,3 +1,6 @@
+// Raj Keswani
+// April 5, 2024
+
 /**
  * Creates a Maze made up of MazeCells
  * @author Ms. Namasivayam
@@ -145,8 +148,21 @@ public class Maze {
      * @param col the int col val
      * @return boolean true/false
      */
+
+    // Method makes sure cell is valid
     public boolean isValidCell(int row, int col) {
-        // TODO: Complete this function
+        // Makes sure index isn't out of bounds
+        if (row < 0 || row >= numRows || col < 0 || col >= numCols)
+        {
+            return false;
+        }
+        // Makes sure cell isn't a wall or isn't explored
+        if (mazeGrid[row][col].isWall() || getCell(row, col).isExplored())
+        {
+            return false;
+        }
+
+
         return true;
     }
 }
